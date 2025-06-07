@@ -30,7 +30,6 @@ This project aims to build a robust and user-friendly online platform for restau
 * **Book Reservations:** Easily book tables with specified date, time, number of guests, and any special requests.
 * **Manage Bookings:** View, modify, or cancel existing reservations.
 * **User Accounts:** Create and manage personal accounts.
-* **Email Confirmations:** Receive automated confirmation and reminder emails.
 
 ### Restaurant Staff-facing:
 
@@ -39,7 +38,6 @@ This project aims to build a robust and user-friendly online platform for restau
 * **Booking Management:** Create, edit, or cancel reservations manually for walk-ins or phone bookings.
 * **Customer Database:** Access and manage customer information.
 * **Availability Calendar:** Visual representation of table availability over time.
-* **Reporting:** Basic reports on booking trends and occupancy rates (future enhancement).
 
 ---
 
@@ -63,7 +61,6 @@ The core technologies used in this project are:
     * [GitHub](https://github.com/) (Repository Hosting)
     * [RESTful API](https://restfulapi.net/) Principles
     * [Swagger/OpenAPI](https://swagger.io/) (for API documentation)
-    * [SendGrid](https://sendgrid.com/) or similar (for email notifications) - *If applicable*
 
 ---
 
@@ -90,12 +87,9 @@ To get a local copy up and running, follow these simple steps.
     * **Create Database:** Open **SQL Server Management Studio (SSMS)** and connect to your SQL Server instance. Create a new database, for example, `RestaurantReservationsDb`.
     * **Configure Connection String:** In your backend project (e.g., `backend/RestaurantReservations.Api`), open `appsettings.json` or `appsettings.Development.json`. Update the `DefaultConnection` string to point to your newly created SQL Server database.
         ```json
-        // Example in appsettings.Development.json
         {
           "ConnectionStrings": {
             "DefaultConnection": "Server=YourSqlServerName;Database=RestaurantReservationsDb;Integrated Security=True;TrustServerCertificate=True"
-            // Or if using SQL Server Authentication:
-            // "DefaultConnection": "Server=YourSqlServerName;Database=RestaurantReservationsDb;User Id=YourDbUser;Password=YourDbPassword;TrustServerCertificate=True"
           },
           "JwtSettings": {
             "Secret": "YourVeryStrongAndLongSecretKeyHere"
@@ -107,7 +101,6 @@ To get a local copy up and running, follow these simple steps.
         ```bash
         dotnet ef database update
         ```
-    * *(Optional) Seed Data:* If your project includes initial seed data, ensure it's configured to be applied on startup or run any specific seed commands.
 
 5.  **Backend Setup (.NET):**
     * From the backend project directory (e.g., `cd backend/RestaurantReservations.Api`), restore NuGet packages:
