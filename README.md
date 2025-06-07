@@ -37,7 +37,6 @@ This project aims to build a robust and user-friendly online platform for restau
 * **Table Management:** Assign reservations to specific tables, mark tables as occupied/available.
 * **Booking Management:** Create, edit, or cancel reservations manually for walk-ins or phone bookings.
 * **Customer Database:** Access and manage customer information.
-* **Availability Calendar:** Visual representation of table availability over time.
 
 ---
 
@@ -57,7 +56,6 @@ The core technologies used in this project are:
     * [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) (for database administration)
     * [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/) (for ORM with .NET)
 * **Other Tools/Libraries:**
-    * [Git](https://git-scm.com/) (Version Control)
     * [GitHub](https://github.com/) (Repository Hosting)
     * [RESTful API](https://restfulapi.net/) Principles
     * [Swagger/OpenAPI](https://swagger.io/) (for API documentation)
@@ -77,7 +75,7 @@ To get a local copy up and running, follow these simple steps.
 
 2.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YourUsername/restaurant-reservations.git](https://github.com/YourUsername/restaurant-reservations.git)
+    git clone https://github.com/Jatin-Kesnani/Restaurant-Reservation-Web-App.git
     ```
 3.  **Navigate to the project directory:**
     ```bash
